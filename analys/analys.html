@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8">
+        <title>Min analys</title>
+                <title>Title of the document</title>
+         <!–– ordna en ram till bilderna ––>
+        <style>
+          img {
+          width:1000px;
+          border:2px solid black;
+          }
+        </style>
+    </head>
+    <body>
+     <h1>Uppgift 1a - Analysera en webbplats</h1>
+     Johan Lööv, 2020-02-20<br><br>
+     <a href="#val">Val av webbplats</a><br>
+     <a href="#ana">Analys</a><br>
+     <a href="#res">Responsiv test</a><br>
+     <a href="#kom">Kommentarer & reflektioner</a><br>
+     <a href="#ref">Referenser</a><br><br>
+
+
+     <h2><a name="val">Val av webbplats</h2>
+     <p>
+         Jag valde att ta en titt på  <a href="https://www.filmstaden.se"> Filmstadens webbplats,</a>
+En plats jag besökt många gånger för att köpa biobiljetter.
+     </p>
+     <h2><a name="ana">Analys</a></h2>
+     <p>
+         Här följer analys, vid användning av webbplatsen
+     </p>
+     <h3>1. Vilket syfte verkar webbplatsen ha?</h3>
+     Framgår ju väldigt tydligt att webbplatsens syfte är att sälja biobiljetter till de filmer Filmstaden visar. 
+     <h3>2. Vilken målgrupp verkar webbplatsen ha?</h3>
+     Människor som vill se en film (framförallt en relativt ny film). Yngre (<75 år) och svensktalande.
+     Jag drar dessa slutsatser iom att gamla människor kan ha svårt att söka information via webbsidor samt att Webbplatsen saknar
+     menyval för översättning till andra språk.
+     <h3>3. Hur logisk är navigeringen på webbplatsen?</h3>
+     Det är väl mycket fokus på biljettförsäljning. Det mest centrala borde vara begreppet Film (ej biljetter) tycker jag.
+     Webbplatsen borde komma ihåg vilken biograf jag brukar vara intresserad av istället för att jag skall behöva välja den varje gång.
+     Man borde kunna filtrera filmerna efter typ av film (genre).
+     Navigeringen i stort tycker jag fungerar bra. Finns ej så mycket korsreferenser vilket är en fördel och det går att backa och ångra
+     val som man har gjort. Det fungerar bra att backa via webbläsarens ”bakåtknapp”.
+     <h3>4. Hur och varför används bilder på webbplatsen?</h3>
+     1.	Bilder används i stor omfattning och förstås även rörliga sådana (trailers). Bilderna används för att göra reklam för filmer.
+     Finns även bilder på glada biobesökare och på vad som går att köpa och ta med in i salongen, t ex popcorn.
+     Såg att sidan för trailers bryter mot designregel som säger “Starta inte multimediepresentationer automatiskt”
+     [T Sundström, 2005, Användbarhetsboken, sid 72]. En trailer går ofta igång direkt när man kommer till sidan.
+     <h3>5. Hur är tillgängligheten, hur skulle t.ex. en synskadad uppfatta webbplatsen?</h3>
+     Tycker att man har utnyttjat ytorna bra och lagt viktig information där blicken naturligt faller och att man följer rådet
+     ”placera sidans delar där användarna brukar titta efter dem” [T Sundström, 2005, Användbarhetsboken, sid 67].
+     Tror inte en synskadad skulle ha problem med att använda sidan. Förstorar man upp via cntrl/+ syns all info om filmerna tydligt.
+     Möjligen kan det bli svårt med platsbokning, vid själva biljettköpet, ifall det är en stor salong.
+     Även en blind person skulle kunna använda sidan (ihop med hjälpmedel som läser upp innehållet) iom att det går att navigera utan mus.
+     <h3>6. Är webbplatsen responsiv, alltså fungerar webbplatsen på olika skärmupplösningar/skärmstorlekar?</h3>
+     Ja, den fungerar bra på både dator, Ipad och telefon enligt de tester jag har gjort via dessa redskap
+     <h3>7. Vilka brister i webbplatsen hittar du och vilka lösningar på problemen skulle du föreslå?</h3>
+    <!–– Använd punktlista ––>
+    <ul>
+     <li>
+         Den minns inte vilken biograf jag brukar besöka.
+         <br/>
+         -Detta åtgärdas genom att lagra denna information i cookies
+     </li>
+     <li>
+         När man jobbar med mindre skärm eller har zoomat-in täcker menyvalen hela skärmen då man klickar på menyn.
+         <br/>
+        -Detta åtgärdas genom att dynamiskt begränsa bredden på undermenyerna, så de ryms vid in-zoomning.
+     </li>
+     <li>
+         Behövs två knapptryckningar för att välja biograf (1. klicka på biografen, 2. klicka på visa val).
+         <br/>
+        -Detta åtgärdas genom att vid val av biograf stänga dialogen utan att användaren skall behöva klicka ”visa val” först
+     </li>
+     <li>
+         Snabblänkar försvinner då man zoomar-in eller jobbar med liten skärm vilket gör att man måste gå omvägen via menyn istället.
+         <br/>
+        -Detta åtgärdas genom att behålla de viktigaste snabblänkarna vid in-zoomning, typ Filmer & Biljetter
+     </li>
+
+    </ul>
+
+     <h2><a name="res">Responsiv test</a></h2>
+     <p>
+         Som jag redan nämnt gjorde jag några manuella tester med olika skärmstorlekar (Mac, ipad, Iphone 7 etc) och här följer
+         dessutom resultatet från ett antal testverktyg som jag använt för att testa webbplatsen
+     </p>
+     <h3>Testverktyg</h3>
+     <ul>
+         <li>
+             <em>Resizer</em> (Google test tool)
+             <br/>
+             Sidorna såg bra ut i alla simuleringar. Så här såg det t ex ut för Iphone 5.
+             <img src="bilder/resizer.png" alt="Smiley face">
+         </li>
+         <br>
+         <br>
+         <li>
+         <em>Responsive design checker</em> (ett tool på webben, see <a href="https://responsivedesignchecker.com/"> responsivedesignchecker.com</a>)
+             <br/>
+             Inga problem att avända olika devices via detta test tool. Så här blev resultatet för en Nexus 7 tablet
+             <img src="bilder/ResponsiveDesignChecker.png" alt="Smiley face">
+         </li>
+         <br>
+         <br>
+         <li>
+         <em>Responsinator</em> (ett tool på webben, see <a href="https://www.responsinator.com/"> responsinator.com</a>
+             <br/>
+             Även detta test-tool gav fina resultat
+         </li>
+     </ul>
+     <h3>Testverktyg för svarshastighet</h3>
+     Jag gjorde även några automatiserade tester för att utvärdera svarshastigheten
+     <ul>
+         <li>
+             <em>Page Speed Insights</em> (google dev tool)
+             <br/>
+             Detta verktyg mäter svarshastighet och resultatet via verktyget blev dålig, se nedan
+             <img src="bilder/PageSpeedInsights.png" alt="Smiley face">
+         </li>
+         <br>
+         <br>
+         <li>
+             <em>Website Speed Test</em> (online tool from keyCDN tools)
+             <br/>
+             Även detta tool indikerar att hastigheten inte är den bästa (gjorde några referenshämtningar mot några andra svenska
+             sajter och de fick bättre resultat)
+             <img src="bilder/WebsiteSpeedTest.png" alt="Smiley face">
+         </li>
+         <br>
+         <br>
+     </ul>
+     <h2><a name="kom">Kommentarer & reflektioner</a></h2>
+     <p>
+         Tycker i stort att webbplatsen fungerar bra och fyller sitt syfte. Man skulle dock kunna göra mer av den. T ex upplysa om
+         framtida filmer, skriva om filmnyheter och filmfestivaler och publicera filmrelaterade reportage. Man kunde även ha länkar
+         till andra filmsajter, exempelvis länka till recensioner av de filmer som visas.
+     </p>
+     <h2><a name="ref">Referenser</a></h2>
+     <p>
+         Listar här upp ett antal sidor på nätet som gett mig input som underlättat analysarbetet
+        <ol>
+            <li><a href="http://www.anvandbart.se">http://www.anvandbart.se</a></li>
+            <li><a href="https://validator.w3.org/check?uri=referer">https://validator.w3.org/check?uri=referer</a></li>
+            <li><a href="https://jigsaw.w3.org/css-validator/check/referer">https://jigsaw.w3.org/css-validator/check/referer</a></li>
+            <li><a href="https://chrome.google.com/webstore/detail/viewport-resizer">https://chrome.google.com/webstore/detail/viewport-resizer</a></li>
+            <li><a href="https://responsivedesignchecker.com/">https://responsivedesignchecker.com/</a></li>
+            <li><a href="https://www.responsinator.com/">https://www.responsinator.com/</a></li>
+            <li><a href="https://developers.google.com/speed/pagespeed/insights/?hl=sv">https://developers.google.com/speed/pagespeed/insights/?hl=sv</a></li>
+            <li><a href="https://gtmetrix.com/">https://gtmetrix.com/</a></li>
+            <li><a href="https://tools.keycdn.com/speed">https://tools.keycdn.com/speed</a></li>
+            <li><a href="https://www.ginifab.com/feeds/pms/color_picker_from_image.php">https://www.ginifab.com/feeds/pms/color_picker_from_image.php</a></li>
+        </ol>
+     </p>
+    </body>
+</html>
